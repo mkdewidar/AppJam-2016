@@ -73,11 +73,30 @@ namespace EventR
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int textview = 2131099648;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Organiser = 2130903040;
+			public const int AppointmentView = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Organiser = 2130903041;
 			
 			static Layout()
 			{
