@@ -79,6 +79,9 @@ namespace EventR
 			// aapt resource value: 0x7f060000
 			public const int textview = 2131099648;
 			
+			// aapt resource value: 0x7f060001
+			public const int user1_button_id = 2131099649;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -96,7 +99,10 @@ namespace EventR
 			public const int AppointmentView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Organiser = 2130903041;
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Organiser = 2130903042;
 			
 			static Layout()
 			{
@@ -111,11 +117,11 @@ namespace EventR
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
-			
 			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			public const int ApplicationName = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int user1_button_text = 2130968577;
 			
 			static String()
 			{

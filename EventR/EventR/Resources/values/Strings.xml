@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">EventR</string>
-  <string-array name ="appointments">
-    <item>Christmas Meal</item>
-    <item>Ocean Wednesday</item>
-    <item>Tech Nottingham</item>
-  </string-array>
+
+	<string-array name ="appointments">
+		<item>Christmas Meal</item>
+		<item>Ocean Wednesday</item>
+		<item>Tech Nottingham</item>
+	</string-array>
+
+    <string name="user1_button_text">User 1</string>
 </resources>
