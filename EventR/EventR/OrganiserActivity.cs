@@ -6,7 +6,7 @@ using Android.Content.Res;
 namespace EventR
 {
     [Activity(Label = "EventR", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : ListActivity
+    public class OrganiserActivity : ListActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
