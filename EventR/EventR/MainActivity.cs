@@ -17,14 +17,13 @@ namespace EventR
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // TODO: This is where you get to set all the data for the events
             PopulateEvents();
 
             Button userButton = FindViewById<Button>(Resource.Id.user1_button_id);
 
             userButton.Click += delegate
             {
-                StartActivity(typeof(GuestActivity));
+                StartActivity(typeof(OrganiserActivity));
             };
 
             userButton.Text = "Click here to be User 1!!";
@@ -32,7 +31,6 @@ namespace EventR
 
         private void PopulateEvents()
         {
-            // TODO: use this function to populate all of the event data
             events.Add(new ScheduledEvent());
             events[0].name = "Christmas Party";
             events[0].amHosting = true;
@@ -60,13 +58,13 @@ namespace EventR
             events[2].attendees.Add(new Attendee("David", true, true));
 
             events.Add(new ScheduledEvent());
-            events[2].name = "Spoons";
-            events[2].amHosting = false;
-            events[2].attendees = new List<Attendee>();
-            events[2].attendees.Add(new Attendee("John", true, true));
-            events[2].attendees.Add(new Attendee("Mark", false, false));
-            events[2].attendees.Add(new Attendee("Brad", false, true));
-            events[2].attendees.Add(new Attendee("Josh", true, true));
+            events[3].name = "Spoons";
+            events[3].amHosting = false;
+            events[3].attendees = new List<Attendee>();
+            events[3].attendees.Add(new Attendee("John", true, true));
+            events[3].attendees.Add(new Attendee("Mark", false, false));
+            events[3].attendees.Add(new Attendee("Brad", false, true));
+            events[3].attendees.Add(new Attendee("Josh", true, true));
         }
     }
 

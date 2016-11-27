@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace EventR
 {
-    [Activity(Label = "TimeSelector")]
+    [Activity(Label = "Possible Dates")]
     public class TimeSelector : ListActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

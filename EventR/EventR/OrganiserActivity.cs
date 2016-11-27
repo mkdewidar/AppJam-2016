@@ -2,6 +2,8 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content.Res;
+using Android.Views;
+using Android.Content;
 
 using System.Collections.Generic;
 
@@ -24,11 +26,16 @@ namespace EventR
                 }
             }
 
-            // TODO: instead of using this array we should be using the hostedEvents list
-            string[] appointmentsArray = Resources.GetStringArray(Resource.Array.appointments);
-            ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, appointmentsArray);
+            ListAdapter = new ArrayAdapter<ScheduledEvent>(this, Android.Resource.Layout.SimpleListItem1, hostedEvents);
         }
-        
+
+        protected override void OnListItemClick(ListView l, View v, int position, long id)
+        {
+            Intent openEventAttendance = new Intent(this, typeof(EventAttendance));
+            openEventAttendance.PutExtra("EVENT_NAME", hostedEvents[position].name);
+            StartActivityForResult(openEventAttendance, -1);
+        }
+
     }
 }
 
