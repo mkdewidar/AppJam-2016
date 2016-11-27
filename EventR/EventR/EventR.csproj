@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventData\EventDataManager.cs" />
+    <Compile Include="EventData\Attendee.cs" />
     <Compile Include="EventData\EventDate.cs" />
     <Compile Include="EventData\ScheduledEvent.cs" />
     <Compile Include="GuestActivity.cs" />

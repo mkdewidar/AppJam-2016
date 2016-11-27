@@ -1,27 +1,30 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
+
+using System.Collections.Generic;
 
 namespace EventR
 {
-    [Activity(Label = "GuestActivity")]
+    [Activity(Label = "Scheduled Events")]
     public class GuestActivity : Activity
     {
+        private List<ScheduledEvent> scheduledEvents = new List<ScheduledEvent>();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // TEST
-            // grab the text view by the ID
-            // change the text to hello world
+            foreach (var e in MainActivity.events)
+            {
+                if (e.amHosting == false)
+                {
+                    scheduledEvents.Add(e);
+                }
+            }
+
+            ArrayAdapter<ScheduledEvent> listOfEventsAdapter = new ArrayAdapter<ScheduledEvent>(this, Android.Resource.Layout.SimpleListItem1);
+            listOfEventsAdapter.AddAll(scheduledEvents);
         }
     }
 }
