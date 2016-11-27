@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="EventAttendance.cs" />
     <Compile Include="EventData\Attendee.cs" />
-    <Compile Include="EventData\EventDataManager.cs" />
     <Compile Include="EventData\EventDate.cs" />
     <Compile Include="EventData\EventDateAdapter.cs" />
     <Compile Include="EventData\ScheduledEvent.cs" />
@@ -68,7 +67,6 @@
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-
     <AndroidResource Include="Resources\layout\Organiser.axml" />
     <AndroidResource Include="Resources\layout\ScheduledEventListItem.axml" />
     <AndroidResource Include="Resources\layout\EventAttendence.axml">

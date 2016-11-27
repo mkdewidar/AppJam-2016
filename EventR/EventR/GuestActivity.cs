@@ -1,6 +1,8 @@
 using Android.App;
 using Android.OS;
 using Android.Widget;
+using Android.Views;
+using Android.Content;
 
 using System.Collections.Generic;
 
@@ -27,6 +29,14 @@ namespace EventR
             // scheduledEvents.Add(new ScheduledEvent() { name = "Event2" } );
 
             ListAdapter = new ArrayAdapter<ScheduledEvent>(this, Android.Resource.Layout.SimpleListItem1, scheduledEvents);
+        }
+
+        protected override void OnListItemClick(ListView l, View v, int position, long id)
+        {
+            // we're passing the index of the event to the time selector to show its dates
+            Intent openTimeSelector = new Intent(this, typeof(TimeSelector));
+            openTimeSelector.PutExtra("EVENT_INDEX", position);
+            StartActivity(openTimeSelector);
         }
     }
 }
