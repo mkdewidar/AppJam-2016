@@ -10,9 +10,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace EventR.EventData
+namespace EventR
 {
-    [Activity(Label = "TimeSelector",MainLauncher =true)]
+    [Activity(Label = "TimeSelector")]
     public class TimeSelector : ListActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

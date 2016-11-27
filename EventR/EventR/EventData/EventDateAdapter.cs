@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace EventR.EventData
+namespace EventR
 {
    public class EventDateAdapter :BaseAdapter<string>
     {

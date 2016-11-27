@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace EventR
 {
-    [Activity(Label = "EventR"/*,MainLauncher = true, Icon = "@drawable/icon"*/)]
+    [Activity(Label = "EventR",MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         static public List<ScheduledEvent> events = new List<ScheduledEvent>();
@@ -24,7 +24,7 @@ namespace EventR
 
             userButton.Click += delegate
             {
-                StartActivity(typeof(GuestActivity));
+                StartActivity(typeof(TimeSelector));
             };
 
             userButton.Text = "Click here to be User 1!!";
