@@ -6,11 +6,22 @@
     <Button
         android:id="@+id/user1_button_id"
         android:layout_width="match_parent"
-        android:layout_height="450dip"
+        android:layout_height="150dip"
         android:text="@string/user1_button_text" />
     <Button
         android:id="@+id/user2_button_id"
         android:layout_width="match_parent"
-        android:layout_height="450dip"
+        android:layout_height="150dip"
         android:text="@string/user2_button_text" />
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:hint="Enter Your Name" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
 </LinearLayout>

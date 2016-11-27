@@ -1,6 +1,7 @@
 using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Views;
 using System.Collections.Generic;
 
 namespace EventR
@@ -9,6 +10,7 @@ namespace EventR
     public class MainActivity : Activity
     {
         static public List<ScheduledEvent> events = new List<ScheduledEvent>();
+        static public string userName;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -35,13 +37,29 @@ namespace EventR
                 StartActivity(typeof(GuestActivity));
             };
             user2Button.Text = "Click here to be User 2!!";
+
+            EditText namebox = FindViewById<EditText>(Resource.Id.editText1);
+
+
+            namebox.KeyPress += (object sender,  View.KeyEventArgs e) => {
+                e.Handled = false;
+                if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
+                {
+                    userName = namebox.Text;
+                    Toast.MakeText(this, namebox.Text, ToastLength.Short).Show();
+                    e.Handled = true;
+                }
+            };
+
+            TextView namecopy = FindViewById<TextView>(Resource.Id.textView1);
+            namecopy.Text = userName;
 		}
 
         private void PopulateEvents()
         {
             events.Add(new ScheduledEvent());
             events[0].name = "Christmas Party";
-            events[0].amHosting = true;
+            events[0].HostName = "Matt";
             events[0].attendees = new List<Attendee>();
             events[0].attendees.Add(new Attendee("Victor", true, true));
             events[0].attendees.Add(new Attendee("Mo",false,false));
@@ -53,7 +71,7 @@ namespace EventR
 
             events.Add(new ScheduledEvent());
             events[1].name = "Ice Skating";
-            events[1].amHosting = false;
+            events[1].HostName = "Victor";
             events[1].attendees = new List<Attendee>();
             events[1].attendees.Add(new Attendee("Jim", true, true));
             events[1].attendees.Add(new Attendee("Fred", false, false));
@@ -67,7 +85,7 @@ namespace EventR
 
             events.Add(new ScheduledEvent());
             events[2].name = "AppJam";
-            events[2].amHosting = true;
+            events[2].HostName = "Mo";
             events[2].attendees = new List<Attendee>();
             events[2].attendees.Add(new Attendee("Annie", true, true));
             events[2].attendees.Add(new Attendee("Alex", false, false));
@@ -77,7 +95,7 @@ namespace EventR
 
             events.Add(new ScheduledEvent());
             events[3].name = "Spoons";
-            events[3].amHosting = false;
+            events[3].HostName = "John";
             events[3].attendees = new List<Attendee>();
             events[3].attendees.Add(new Attendee("John", true, true));
             events[3].attendees.Add(new Attendee("Mark", false, false));

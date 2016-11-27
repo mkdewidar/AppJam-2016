@@ -20,7 +20,7 @@ namespace EventR
 
             foreach (var e in MainActivity.events)
             {
-                if (e.amHosting == true)
+                if (e.HostName == MainActivity.userName)
                 {
                     hostedEvents.Add(e);
                 }

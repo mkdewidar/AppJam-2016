@@ -19,11 +19,12 @@ namespace EventR
 
             foreach (var e in MainActivity.events)
             {
-                if (e.amHosting == false)
+                if (e.HostName == MainActivity.userName)
                 {
                     scheduledEvents.Add(e);
                 }
             }
+
 
             // scheduledEvents.Add(new ScheduledEvent() { name = "Event1" } );
             // scheduledEvents.Add(new ScheduledEvent() { name = "Event2" } );

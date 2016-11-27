@@ -10,7 +10,7 @@ namespace EventR
         public string name;
         public List<EventDate> dates;
         public List<Attendee> attendees;
-        public bool amHosting;
+        public String HostName;
 
         public override string ToString()
         {
