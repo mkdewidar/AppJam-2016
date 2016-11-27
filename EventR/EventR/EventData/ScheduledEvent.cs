@@ -5,9 +5,16 @@ using System.Text;
 
 namespace EventR
 {
-    class ScheduledEvent
+    public class ScheduledEvent
     {
         public string name;
         public List<EventDate> dates;
+        public List<Attendee> attendees;
+        public bool amHosting;
+
+        public override string ToString()
+        {
+            return name;
+        }
     }
 }
