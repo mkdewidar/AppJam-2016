@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace EventR
 {
     [Activity(Label = "Scheduled Events")]
-    public class GuestActivity : Activity
+    public class GuestActivity : ListActivity
     {
         private List<ScheduledEvent> scheduledEvents = new List<ScheduledEvent>();
 
@@ -23,8 +23,10 @@ namespace EventR
                 }
             }
 
-            ArrayAdapter<ScheduledEvent> listOfEventsAdapter = new ArrayAdapter<ScheduledEvent>(this, Android.Resource.Layout.SimpleListItem1);
-            listOfEventsAdapter.AddAll(scheduledEvents);
+            // scheduledEvents.Add(new ScheduledEvent() { name = "Event1" } );
+            // scheduledEvents.Add(new ScheduledEvent() { name = "Event2" } );
+
+            ListAdapter = new ArrayAdapter<ScheduledEvent>(this, Android.Resource.Layout.SimpleListItem1, scheduledEvents);
         }
     }
 }
