@@ -9,4 +9,24 @@
 	</string-array>
 
     <string name="user1_button_text">User 1</string>
+  
+  <string-array name ="attending">
+    <item>Victor</item>
+    <item>Matt</item>
+    <item>Mo</item>
+    <item>James</item>
+    <item>Alex</item>
+  </string-array>
+  
+  <string-array name ="not_attending">
+    <item>Lewis</item>
+    <item>Jack</item>
+    <item>Bob</item>
+    <item>Lisa</item>
+    <item>Charlotte</item>
+    <item>Andy</item>
+    <item>Cindy</item>
+    <item>Izzy</item>
+  </string-array>
+  
 </resources>
