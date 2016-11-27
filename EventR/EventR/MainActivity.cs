@@ -6,7 +6,7 @@ using Android.Content;
 
 namespace EventR
 {
-    [Activity(Label = "EventR", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "EventR"/*,MainLauncher = true, Icon = "@drawable/icon"*/)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

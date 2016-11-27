@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,7 +53,9 @@
   <ItemGroup>
     <Compile Include="EventData\EventDataManager.cs" />
     <Compile Include="EventData\EventDate.cs" />
+    <Compile Include="EventData\EventDateAdapter.cs" />
     <Compile Include="EventData\ScheduledEvent.cs" />
+    <Compile Include="EventData\TimeSelector.cs" />
     <Compile Include="GuestActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="OrganiserActivity.cs" />
@@ -65,6 +67,9 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Organiser.axml" />
+    <AndroidResource Include="Resources\layout\ScheduledEventListItem.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -84,6 +89,7 @@
     <AndroidResource Include="Resources\layout\AppointmentView.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+>>>>>>> Added EventDate Adapter
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
 		<Target Name="BeforeBuild">

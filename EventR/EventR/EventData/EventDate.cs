@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EventR
 {
-    class EventDate
+  public  class EventDate
     {
         public DateTime startDate;
         public long duration;
