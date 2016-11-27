@@ -94,11 +94,14 @@ namespace EventR
 			// aapt resource value: 0x7f060004
 			public const int textView1 = 2131099652;
 			
+			// aapt resource value: 0x7f060001
+			public const int button1 = 2131099649;
+			
 			// aapt resource value: 0x7f060000
 			public const int textview = 2131099648;
 			
-			// aapt resource value: 0x7f060001
-			public const int user1_button_id = 2131099649;
+			// aapt resource value: 0x7f060002
+			public const int user1_button_id = 2131099650;
 			
 			static Id()
 			{
@@ -117,10 +120,13 @@ namespace EventR
 			public const int AppointmentView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int EventAttendence = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Organiser = 2130903042;
+			public const int Main = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Organiser = 2130903043;
 			
 			// aapt resource value: 0x7f030003
 			public const int ScheduledEventListItem = 2130903043;

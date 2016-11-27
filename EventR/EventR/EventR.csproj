@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="EventAttendance.cs" />
     <Compile Include="EventData\Attendee.cs" />
+    <Compile Include="EventData\EventDataManager.cs" />
     <Compile Include="EventData\EventDate.cs" />
     <Compile Include="EventData\EventDateAdapter.cs" />
     <Compile Include="EventData\ScheduledEvent.cs" />
@@ -69,6 +70,9 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Organiser.axml" />
     <AndroidResource Include="Resources\layout\ScheduledEventListItem.axml" />
+    <AndroidResource Include="Resources\layout\EventAttendence.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
