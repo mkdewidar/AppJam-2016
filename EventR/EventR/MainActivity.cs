@@ -28,7 +28,7 @@ namespace EventR
                 StartActivity(typeof(OrganiserActivity));
             };
 
-            userButton.Text = "Click here to be User 1!!";
+            userButton.Text = "Events you are hosting";
 
             Button user2Button = FindViewById<Button>(Resource.Id.user2_button_id);
 
@@ -36,7 +36,7 @@ namespace EventR
             {
                 StartActivity(typeof(GuestActivity));
             };
-            user2Button.Text = "Click here to be User 2!!";
+            user2Button.Text = "Events you have been invited to";
 
             EditText namebox = FindViewById<EditText>(Resource.Id.editText1);
 

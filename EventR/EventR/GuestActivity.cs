@@ -19,9 +19,13 @@ namespace EventR
 
             foreach (var e in MainActivity.events)
             {
-                if (e.HostName == MainActivity.userName)
+                for (int i = 0; i < e.attendees.Count; i++)
+                {
+                string tempname = e.attendees[i].name;
+                if (MainActivity.userName == tempname)
                 {
                     scheduledEvents.Add(e);
+                }
                 }
             }
 
