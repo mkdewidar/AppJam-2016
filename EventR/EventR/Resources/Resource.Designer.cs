@@ -85,20 +85,23 @@ namespace EventR
 			// aapt resource value: 0x7f060001
 			public const int button1 = 2131099649;
 			
-			// aapt resource value: 0x7f060005
-			public const int button2 = 2131099653;
-			
-			// aapt resource value: 0x7f060003
-			public const int linearLayout1 = 2131099651;
+			// aapt resource value: 0x7f060006
+			public const int button2 = 2131099654;
 			
 			// aapt resource value: 0x7f060004
-			public const int textView1 = 2131099652;
+			public const int linearLayout1 = 2131099652;
+			
+			// aapt resource value: 0x7f060005
+			public const int textView1 = 2131099653;
 			
 			// aapt resource value: 0x7f060000
 			public const int textview = 2131099648;
 			
 			// aapt resource value: 0x7f060002
 			public const int user1_button_id = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int user2_button_id = 2131099651;
 			
 			static Id()
 			{
@@ -131,6 +134,9 @@ namespace EventR
 			// aapt resource value: 0x7f030005
 			public const int ScheduledEventListItem = 2130903045;
 			
+			// aapt resource value: 0x7f030006
+			public const int TimeSelectionLayout = 2130903046;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -149,6 +155,9 @@ namespace EventR
 			
 			// aapt resource value: 0x7f040001
 			public const int user1_button_text = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int user2_button_text = 2130968578;
 			
 			static String()
 			{

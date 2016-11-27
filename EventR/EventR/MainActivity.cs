@@ -27,6 +27,14 @@ namespace EventR
             };
 
             userButton.Text = "Click here to be User 1!!";
+
+            Button user2Button = FindViewById<Button>(Resource.Id.user2_button_id);
+
+            user2Button.Click += delegate
+            {
+                StartActivity(typeof(GuestActivity));
+            };
+            user2Button.Text = "Click here to be User 2!!";
 		}
 
         private void PopulateEvents()
@@ -38,6 +46,10 @@ namespace EventR
             events[0].attendees.Add(new Attendee("Victor", true, true));
             events[0].attendees.Add(new Attendee("Mo",false,false));
             events[0].attendees.Add(new Attendee("Matt", false, true));
+            events[0].dates = new List<EventDate>();
+            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 12, 2) });
+            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 10, 15) });
+            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 9, 2) });
 
             events.Add(new ScheduledEvent());
             events[1].name = "Ice Skating";
@@ -47,6 +59,11 @@ namespace EventR
             events[1].attendees.Add(new Attendee("Fred", false, false));
             events[1].attendees.Add(new Attendee("Garret", false, true));
             events[1].attendees.Add(new Attendee("Gary", true, true));
+            events[1].dates = new List<EventDate>();
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 1, 2) });
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 2, 7) });
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2016, 12, 12) });
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 2, 16) });
 
             events.Add(new ScheduledEvent());
             events[2].name = "AppJam";
@@ -56,6 +73,7 @@ namespace EventR
             events[2].attendees.Add(new Attendee("Alex", false, false));
             events[2].attendees.Add(new Attendee("Ross", false, true));
             events[2].attendees.Add(new Attendee("David", true, true));
+            events[2].dates = new List<EventDate>();
 
             events.Add(new ScheduledEvent());
             events[3].name = "Spoons";
@@ -65,6 +83,7 @@ namespace EventR
             events[3].attendees.Add(new Attendee("Mark", false, false));
             events[3].attendees.Add(new Attendee("Brad", false, true));
             events[3].attendees.Add(new Attendee("Josh", true, true));
+            events[3].dates = new List<EventDate>();
         }
     }
 

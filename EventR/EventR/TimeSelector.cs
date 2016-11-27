@@ -15,24 +15,25 @@ namespace EventR
     [Activity(Label = "Possible Dates")]
     public class TimeSelector : ListActivity
     {
+        private List<EventDate> possibleDates = new List<EventDate>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            EventDate event1 = new EventDate();
-            event1.startDate = new DateTime(2016, 12, 3, 15, 0, 0, 0);
-            event1.duration = 60;
 
-            EventDate event2 = new EventDate();
-            event2.startDate = new DateTime(2016, 11, 2, 18, 0, 0, 0);
-            event2.duration = 120;
+            SetContentView(Resource.Layout.TimeSelectionLayout);
 
-            EventDate event3 = new EventDate();
-            event2.startDate = new DateTime(2016, 12, 16, 16, 0, 0, 0);
-            event3.duration = 90;
- 
-            EventDate[] events = { event1,event2,event3 };
-            string[] histring = { "hi", "hi", "hi" };
-            ListAdapter = new EventDateAdapter(this, events);
+            string eventName = Intent.GetStringExtra("EVENT_NAME");
+            int eventIndex = 0;
+            for (int count = 0; count < MainActivity.events.Count; count++)
+            {
+                if (MainActivity.events[count].name == eventName)
+                {
+                    eventIndex = count;
+                    break;
+                }
+            }
+            possibleDates = MainActivity.events[eventIndex].dates;
+            ListAdapter = new EventDateAdapter(this, possibleDates);
         }
     }
 }

@@ -9,6 +9,7 @@
 	</string-array>
 
     <string name="user1_button_text">User 1</string>
+    <string name ="user2_button_text">User 2</string>
   
   <string-array name ="attending">
     <item>Victor</item>

@@ -35,7 +35,7 @@ namespace EventR
         {
             // we're passing the index of the event to the time selector to show its dates
             Intent openTimeSelector = new Intent(this, typeof(TimeSelector));
-            openTimeSelector.PutExtra("EVENT_INDEX", position);
+            openTimeSelector.PutExtra("EVENT_NAME", scheduledEvents[position].name);
             StartActivity(openTimeSelector);
         }
     }

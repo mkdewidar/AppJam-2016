@@ -36,6 +36,7 @@ namespace EventR
                 if (MainActivity.events[i].name == eventName)
                 {
                     eventIndex = i;
+                    break;
                 }
             }
 

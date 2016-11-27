@@ -15,8 +15,8 @@ namespace EventR
    public class EventDateAdapter :BaseAdapter<string>
     {
         Activity _context;
-        EventDate[] eventsss_;
-        public EventDateAdapter(Activity context, EventDate[] eventsss) :base()
+        List<EventDate> eventsss_;
+        public EventDateAdapter(Activity context, List<EventDate> eventsss) :base()
         {
             this._context = context;
             this.eventsss_ = eventsss;
@@ -36,14 +36,14 @@ namespace EventR
         {
             get
             {
-               return eventsss_.Length; 
+               return eventsss_.Count; 
             }
         }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             View view = convertView;
             view = _context.LayoutInflater.Inflate(Resource.Layout.ScheduledEventListItem, null);
-            // view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = eventsss_[position];
+            view.FindViewById<TextView>(Resource.Id.textView1).Text = eventsss_[position].startDate.ToString();
             return view;
         }
     }

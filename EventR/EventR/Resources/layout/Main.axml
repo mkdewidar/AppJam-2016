@@ -8,4 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="450dip"
         android:text="@string/user1_button_text" />
+    <Button
+        android:id="@+id/user2_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="450dip"
+        android:text="@string/user2_button_text" />
 </LinearLayout>
