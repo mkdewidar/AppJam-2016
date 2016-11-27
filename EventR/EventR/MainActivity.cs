@@ -65,9 +65,9 @@ namespace EventR
             events[0].attendees.Add(new Attendee("Mo",false,false));
             events[0].attendees.Add(new Attendee("Matt", false, true));
             events[0].dates = new List<EventDate>();
-            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 12, 2) });
-            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 10, 15) });
-            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 9, 2) });
+            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 12, 2, 14, 00, 00) });
+            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 10, 15, 14, 00, 00) });
+            events[0].dates.Add(new EventDate() { duration = 200, startDate = new System.DateTime(2016, 9, 2, 14, 00, 00) });
 
             events.Add(new ScheduledEvent());
             events[1].name = "Ice Skating";
@@ -78,10 +78,10 @@ namespace EventR
             events[1].attendees.Add(new Attendee("Garret", false, true));
             events[1].attendees.Add(new Attendee("Gary", true, true));
             events[1].dates = new List<EventDate>();
-            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 1, 2) });
-            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 2, 7) });
-            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2016, 12, 12) });
-            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 2, 16) });
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 1, 2, 15, 30, 00) });
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 2, 7, 15, 30, 00) });
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2016, 12, 12, 10, 30, 00) });
+            events[1].dates.Add(new EventDate() { duration = 500, startDate = new System.DateTime(2017, 2, 16, 10, 30, 00) });
 
             events.Add(new ScheduledEvent());
             events[2].name = "AppJam";
@@ -92,6 +92,8 @@ namespace EventR
             events[2].attendees.Add(new Attendee("Ross", false, true));
             events[2].attendees.Add(new Attendee("David", true, true));
             events[2].dates = new List<EventDate>();
+            events[2].dates.Add(new EventDate() { duration = 1440, startDate = new System.DateTime(2016, 11, 27, 12, 00, 00) });
+            events[2].dates.Add(new EventDate() { duration = 1440, startDate = new System.DateTime(2016, 12, 2, 12, 00, 00) });
 
             events.Add(new ScheduledEvent());
             events[3].name = "Spoons";
@@ -102,6 +104,34 @@ namespace EventR
             events[3].attendees.Add(new Attendee("Brad", false, true));
             events[3].attendees.Add(new Attendee("Josh", true, true));
             events[3].dates = new List<EventDate>();
+            events[3].dates.Add(new EventDate() { duration = 90, startDate = new System.DateTime(2016, 12, 10, 13, 00, 00) });
+            events[3].dates.Add(new EventDate() { duration = 90, startDate = new System.DateTime(2016, 12, 10, 15, 00, 00) });
+
+            events.Add(new ScheduledEvent());
+            events[4].name = "New Year Light Show";
+            events[4].HostName = "John";
+            events[4].attendees = new List<Attendee>();
+            events[4].attendees.Add(new Attendee("Annie", true, true));
+            events[4].attendees.Add(new Attendee("Brad", false, false));
+            events[4].attendees.Add(new Attendee("David", false, true));
+            events[4].attendees.Add(new Attendee("Alex", true, true));
+            events[4].dates = new List<EventDate>();
+            events[4].dates.Add(new EventDate() { duration = 90, startDate = new System.DateTime(2016, 12, 10, 13, 00, 00) });
+            events[4].dates.Add(new EventDate() { duration = 90, startDate = new System.DateTime(2016, 12, 10, 15, 00, 00) });
+
+            events.Add(new ScheduledEvent());
+            events[5].name = "New Year Light Show";
+            events[5].HostName = "John";
+            events[5].attendees = new List<Attendee>();
+            events[5].attendees.Add(new Attendee("Annie", true, true));
+            events[5].attendees.Add(new Attendee("Brad", false, false));
+            events[5].attendees.Add(new Attendee("David", false, true));
+            events[5].attendees.Add(new Attendee("Alex", true, true));
+            events[5].dates = new List<EventDate>();
+            events[5].dates.Add(new EventDate() { duration = 120, startDate = new System.DateTime(2016, 11, 30, 13, 00, 00) });
+            events[5].dates.Add(new EventDate() { duration = 120, startDate = new System.DateTime(2016, 11, 30, 15, 00, 00) });
+            events[5].dates.Add(new EventDate() { duration = 120, startDate = new System.DateTime(2016, 12, 1, 10, 00, 00) });
+            events[5].dates.Add(new EventDate() { duration = 120, startDate = new System.DateTime(2016, 12, 1, 12, 00, 00) });
         }
     }
 

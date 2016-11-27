@@ -43,7 +43,8 @@ namespace EventR
         {
             View view = convertView;
             view = _context.LayoutInflater.Inflate(Resource.Layout.ScheduledEventListItem, null);
-            view.FindViewById<TextView>(Resource.Id.textView1).Text = eventsss_[position].startDate.ToString();
+            view.FindViewById<TextView>(Resource.Id.textView1).Text = eventsss_[position].startDate.ToString() + "\n" + 
+                (eventsss_[position].duration / 60).ToString() + " hr(s) " + (eventsss_[position].duration % 60).ToString() + " mins";
             return view;
         }
     }

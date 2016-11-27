@@ -18,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
+        android:text="Mo"
         android:hint="Enter Your Name" />
     <TextView
         android:text="Text"

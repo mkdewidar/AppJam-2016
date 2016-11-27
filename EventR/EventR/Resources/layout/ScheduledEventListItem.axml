@@ -3,7 +3,8 @@
     p1:orientation="horizontal"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/linearLayout1">
+    p1:id="@+id/linearLayout1"
+    p1:gravity="center_horizontal">
     <Button
         p1:text="Can't Go"
         p1:layout_width="wrap_content"
@@ -12,6 +13,7 @@
     <TextView
         p1:text="Medium Text"
         p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:gravity="center_horizontal"
         p1:layout_width="wrap_content"
         p1:layout_height="match_parent"
         p1:id="@+id/textView1" />
