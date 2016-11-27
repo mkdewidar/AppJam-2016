@@ -28,6 +28,7 @@ namespace EventR
             string[] appointmentsArray = Resources.GetStringArray(Resource.Array.appointments);
             ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, appointmentsArray);
         }
+        
     }
 }
 
