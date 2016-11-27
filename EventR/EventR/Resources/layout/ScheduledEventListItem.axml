@@ -8,8 +8,7 @@
         p1:text="Button"
         p1:layout_width="wrap_content"
         p1:layout_height="match_parent"
-        p1:id="@+id/button1" 
-        />
+        p1:id="@+id/button1" />
     <TextView
         p1:text="Medium Text"
         p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -21,5 +20,5 @@
         p1:layout_width="wrap_content"
         p1:layout_height="match_parent"
         p1:id="@+id/button2"
-        p1:layout_gravity="right"/>
+        p1:layout_gravity="right" />
 </LinearLayout>

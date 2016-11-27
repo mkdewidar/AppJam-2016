@@ -24,7 +24,7 @@ namespace EventR
 
             userButton.Click += delegate
             {
-                StartActivity(typeof(TimeSelector));
+                StartActivity(typeof(GuestActivity));
             };
 
             userButton.Text = "Click here to be User 1!!";
