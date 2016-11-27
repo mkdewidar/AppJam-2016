@@ -33,6 +33,40 @@ namespace EventR
         private void PopulateEvents()
         {
             // TODO: use this function to populate all of the event data
+            events.Add(new ScheduledEvent());
+            events[0].name = "Christmas Party";
+            events[0].amHosting = true;
+            events[0].attendees = new List<Attendee>();
+            events[0].attendees.Add(new Attendee("Victor", true, true));
+            events[0].attendees.Add(new Attendee("Mo",false,false));
+            events[0].attendees.Add(new Attendee("Matt", false, true));
+
+            events.Add(new ScheduledEvent());
+            events[1].name = "Ice Skating";
+            events[1].amHosting = false;
+            events[1].attendees = new List<Attendee>();
+            events[1].attendees.Add(new Attendee("Jim", true, true));
+            events[1].attendees.Add(new Attendee("Fred", false, false));
+            events[1].attendees.Add(new Attendee("Garret", false, true));
+            events[1].attendees.Add(new Attendee("Gary", true, true));
+
+            events.Add(new ScheduledEvent());
+            events[2].name = "AppJam";
+            events[2].amHosting = true;
+            events[2].attendees = new List<Attendee>();
+            events[2].attendees.Add(new Attendee("Annie", true, true));
+            events[2].attendees.Add(new Attendee("Alex", false, false));
+            events[2].attendees.Add(new Attendee("Ross", false, true));
+            events[2].attendees.Add(new Attendee("David", true, true));
+
+            events.Add(new ScheduledEvent());
+            events[2].name = "Spoons";
+            events[2].amHosting = false;
+            events[2].attendees = new List<Attendee>();
+            events[2].attendees.Add(new Attendee("John", true, true));
+            events[2].attendees.Add(new Attendee("Mark", false, false));
+            events[2].attendees.Add(new Attendee("Brad", false, true));
+            events[2].attendees.Add(new Attendee("Josh", true, true));
         }
     }
 
